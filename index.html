@@ -76,23 +76,15 @@
 
                 <!-- Windows Section -->
                 <h5 class="mt-4">Recente blogposts</h5>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="version-box">
-                            <h5>Post 2</h5>
-                            <p>Version: 2.4.3</p>
-                            <a href="#" class="btn-download">Download</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="version-box">
-                            <h5>Post 1</h5>
-                            <p>Version: 2.4.3</p>
-                            <a href="#" class="btn-download">Download</a>
-                        </div>
-                    </div>
+                <div class="mb-3">
+                    <label for="tagFilter" class="form-label">Filter op tag:</label>
+                    <select id="tagFilter" class="form-select"></select>
                 </div>
+                <div class="row" id="blogPostsContainer"></div>
 
+                <div class="row" id="blogPostsContainer"></div>
+
+                <script src="taghandler.js" defer></script>
             </div>
         </div>
     </div>
