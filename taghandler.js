@@ -39,7 +39,6 @@ async function loadTagsAndPosts() {
                     const box = document.createElement('div');
                     box.className = 'version-box';
 
-                    // Header: weektitel links, link rechts
                     const headerRow = document.createElement('div');
                     headerRow.className = 'd-flex justify-content-between align-items-center';
 
