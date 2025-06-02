@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog Stage - CVO Groeipunt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-2 sidebar" style="width: 12.5%;">
+                <h4>Stage CVO Groeipunt</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="/">Home</a>
+                        <a class="nav-link text-light" href="/about.html">Over</a>
+                    </li>
+                    <li class="nav-item mt-4">
+                        <h5>Blogposts</h5>
+                        <ul class="nav flex-column ms-3">
+                            <li><a class="nav-link text-light" href="/blog/week1">Week 1</a></li>
+                            <li><a class="nav-link text-light" href="/blog/week2">Week 2</a></li>
+                            <li><a class="nav-link text-light" href="/blog/week3">Week 3</a></li>
+                            <li><a class="nav-link text-light" href="/blog/week4">Week 4</a></li>
+                            <li><a class="nav-link text-light" href="/blog/week5">Week 5</a></li>
+                            <li><a class="nav-link text-light" href="/blog/week6">Week 6</a></li>
+                            <li><a class="nav-link text-light" href="/blog/week7">Week 7</a></li>
+                            <li><a class="nav-link text-light" href="/blog/week8">Week 8</a></li>
+                            <li><a class="nav-link text-light" href="/blog/week9">Week 9</a></li>
+                            <li><a class="nav-link text-light" href="/blog/week10">Week 10</a></li>
+                            <li><a class="nav-link text-light" href="/blog/week11">Week 11</a></li>
+                            <li><a class="nav-link text-light" href="/blog/week12">Week 12</a></li>
+                            <li><a class="nav-link text-light" href="/blog/week13">Week 13</a></li>
+                            <li><a class="nav-link text-light" href="/blog/week14">Week 14</a></li>
+                            <li><a class="nav-link text-light" href="/blog/week15">Week 15</a></li>
+                            <li><a class="nav-link text-light" href="/blog/week16">Week 16</a></li>
+                            <li><a class="nav-link text-light" href="/blog/week17">Week 17</a></li>
+                            <li><a class="nav-link text-light" href="/blog/week18">Week 18</a></li>
+                            <li><a class="nav-link text-light" href="/blog/week19">Week 19</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mt-4">
+                        <h5>Links</h5>
+                        <ul class="nav flex-column ms-3">
+                            <li><a class="nav-link text-light" href="https://github.com/arnostage">Github</a></li>
+                            <li><a class="nav-link text-light" href="https://www.groeipunt.be">Groeipunt</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="main-content" style="width: 87.5%;">
+                <h2>Week 5</h2>
+                <div class="package-manager">
+                    <h5>17/02/2025 - 21/02/2025</h5>
+                    <p><strong>Van Idee naar Praktijk: Volledig Functionerende Creatie van Accounts</strong></p>
+
+                    <p>In week 5 kwam er een duidelijke verschuiving naar het afronden en verfijnen van de
+                        kernfunctionaliteiten. Zowel de leerkracht- als studentcreatie werden tot een werkende staat
+                        gebracht, met dynamische aanpassingen aan gegevensbronnen, verbeterde configuraties en visuele
+                        ondersteuning via flowcharts.</p>
+
+                    <p><strong>Voltooiing van CreateTeacher en CreateStudent</strong></p>
+
+                    <p>De klassen <code>CreateTeacher</code> en <code>CreateStudent</code> zijn deze week afgerond en
+                        geïntegreerd in de <code>Program.cs</code>. Beide componenten functioneren nu zoals bedoeld en
+                        zijn klaar voor productie. Door gebruik te maken van <code>PrincipalSearcher</code> werd een
+                        <code>findUser</code>-methode geïmplementeerd, die het zoeken naar bestaande gebruikers in AD
+                        vereenvoudigt.</p>
+
+                    <p><strong>Dynamische Parameters en Slimme Validaties</strong></p>
+
+                    <p>Een belangrijke stap voorwaarts was de automatisering van het instellen van het jaar in de
+                        queries richting Pictoo. Dit maakt het systeem robuuster en onderhoudsarmer. De logica voor het
+                        bepalen van studentomschrijvingen werd eveneens geautomatiseerd via een utilityfunctie. Verder
+                        zijn controles toegevoegd op basis van interne ICT-requests vanuit Groeipunt (zoals vermeld in
+                        4me), waardoor de tool beter aansluit op bestaande procedures.</p>
+
+                    <p><strong>Opruiming en Configuratie-uitbreiding</strong></p>
+
+                    <p>Niet-gebruikte code, waaronder exports van gebruikers die niet in AD zitten, werd verwijderd.
+                        Daarnaast werd <code>Configuration.cs</code> uitgebreid met nieuwe parameters zoals
+                        <code>cursistDomainName</code>, wat het beheer van verschillende domeinen vereenvoudigt. Ook
+                        legacy-verwijzingen zoals Gent/Ninove werden tijdelijk uitgeschakeld om verwarring te vermijden.
+                    </p>
+
+                    <p><strong>Verbeterde Documentatie en Gebruikershulp</strong></p>
+
+                    <p>De CLI-helpfunctionaliteit werd bijgewerkt voor duidelijker gebruik. Daarnaast voegde ik
+                        commentaar toe om de leesbaarheid van complexe stukken code te verbeteren. Tot slot werden
+                        flowcharts toegevoegd aan het project om de algemene logica visueel te ondersteunen — een
+                        belangrijke stap richting documentatie en overdraagbaarheid.</p>
+
+                    <p><strong>Conclusie</strong></p>
+
+                    <p>Deze week werd een grote mijlpaal bereikt: de kernfunctionaliteiten zijn af, en het project staat
+                        nu op een stabiele basis. Dankzij dynamische logica, betere configuratie, en duidelijke
+                        documentatie is het geheel klaar voor verdere testing en implementatie.</p>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+</body>
+
+</html>

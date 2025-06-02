@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blog Stage - CVO Groeipunt</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -18,8 +18,8 @@
                 <h4>Stage CVO Groeipunt</h4>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active text-light" href="/">Home</a>
-                        <a class="nav-link text-light" href="/about">Over</a>
+                        <a class="nav-link text-light" href="/">Home</a>
+                        <a class="nav-link text-light" href="/about.html">Over</a>
                     </li>
                     <li class="nav-item mt-4">
                         <h5>Blogposts</h5>
@@ -56,47 +56,55 @@
             </div>
 
             <div class="main-content" style="width: 87.5%;">
-                <h2>Stage CVO Groeipunt</h2>
+                <h2>Week 18</h2>
                 <div class="package-manager">
-                    <h5>Over stage</h5>
-                    <p>Welkom op mijn stage blog!<br><br>
-                        Momenteel ben ik bezig met een stage bij het Centrum voor Volwassenenonderwijs (CVO) Groeipunt,
-                        waar ik voornamelijk werk met C# en PHP. Tijdens deze stage krijg ik de kans om mijn technische
-                        vaardigheden in de praktijk toe te passen. CVO Groeipunt biedt een leerzame en ondersteunende
-                        setting waar ik niet alleen mijn kennis van softwareontwikkeling uitbreid, maar ook meer leer
-                        over het werken in een team en de verwachtingen van een echte werkplek.<br><br>
+                    <h5>19/05/2025 - 23/05/2025</h5>
+                    <p><strong>Nieuwe Features en Een Onvergetelijk Personeelsfeest</strong></p>
 
-                        Deze blog-website is bedoeld om mijn bevindingen, uitdagingen en voortgang tijdens mijn stage te
-                        documenteren. Het biedt een platform waar ik mijn ervaringen en ontwikkelingen kan delen met
-                        mijn lectoren en collega's. Hier vind je updates over mijn dagelijkse bezigheden, de tools en
-                        technieken die ik gebruik, en de projecten waaraan ik werk — alles wat relevant is aan mijn
-                        stage.<br><br>
+                    <p>Week 18 was zowel technisch als persoonlijk een erg boeiende week binnen mijn stage bij
+                        Groeipunt. Op technisch vlak werkte ik verder aan verschillende onderdelen van MijnGroeipunt,
+                        met specifieke aandacht voor de loginflow, styling en foutoplossing. Daarnaast had ik ook het
+                        plezier om aanwezig te zijn op het personeelsfeest — een fijne ervaring die me nog meer verbond
+                        met het team en de organisatie.</p>
 
-                        Elke week plaats ik een nieuwe blogpost over mijn ervaringen, hoe ik te werk ga, wat ik doe en
-                        de uitdagingen die ik tegenkom.<br><br>
+                    <p><strong>Technische updates: loginflow, warnings en visuele verbeteringen</strong></p>
 
-                        Veel leesplezier en hopelijk biedt deze blog een interessante blik op mijn stage!</p>
+                    <p>Deze week werkte ik verder aan de <strong>loginpagina</strong>. Er werd een <em>random
+                            achtergrondafbeelding</em> toegevoegd, samen met begeleidende teksten onder de loginbuttons
+                        om de gebruikers duidelijker te maken welke loginoptie ze moeten kiezen (Google of Microsoft).
+                        De detectielogica voor het verschil tussen deze twee loginmethodes werd getest en bijgestuurd.
+                    </p>
+
+                    <p>Daarnaast implementeerde ik dat de Microsoft-login nu correct het e-mailadres terugstuurt via
+                        <code>redirect.php</code>, en paste ik de donkere stijl aan zodat ook de Microsoft-button
+                        correct weergegeven wordt in dark mode.</p>
+
+                    <p>Verder voerde ik structurele correcties door, zoals het toevoegen van ontbrekende HTML-tags, het
+                        verplaatsen van JS-imports, en het oplossen van <strong>PHP-warnings</strong> in meerdere
+                        bestanden (<code>newfunctions.php</code>, <code>overzicht.php</code>, <code>rooster</code>
+                        etc.). Deze verbeteringen dragen bij aan de algemene stabiliteit en netheid van de applicatie.
+                    </p>
+
+                    <p><strong>Personeelsfeest Groeipunt: Een inspirerende namiddag</strong></p>
+
+                    <p>Naast het technische werk was ik deze week ook aanwezig op het personeelsfeest van Groeipunt. De
+                        avond begon met een boeiende presentatie door de directeur en werd gevolgd door een gezellige
+                        receptie. Ik kreeg de kans om uitgebreid te praten met mijn stagementor en andere collega’s, en
+                        kreeg verschillende complimenten over mijn inzet en werk. Als kers op de taart sta ik zelfs op
+                        de foto met de grote baas van Groeipunt.</p>
+
+                    <p><strong>Conclusie</strong></p>
+
+                    <p>Week 18 was een bijzondere mix van <em>inhoudelijke vooruitgang</em> en <em>persoonlijke
+                            betrokkenheid</em>. Naast het verder optimaliseren van MijnGroeipunt was het ook gewoon fijn
+                        om als stagiair zo hartelijk opgenomen te worden binnen het team en erkenning te krijgen voor
+                        het geleverde werk.</p>
+
+
+
+
+
                 </div>
-
-                <!-- Windows Section -->
-                <h5 class="mt-4">Recente blogposts</h5>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="version-box">
-                            <h5>Post 2</h5>
-                            <p>Version: 2.4.3</p>
-                            <a href="#" class="btn-download">Download</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="version-box">
-                            <h5>Post 1</h5>
-                            <p>Version: 2.4.3</p>
-                            <a href="#" class="btn-download">Download</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>

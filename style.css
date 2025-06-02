@@ -1,0 +1,91 @@
+/* Algemene stijlen */
+html, body {
+    height: 100%; /* Zorg ervoor dat de HTML en body volledige hoogte van de pagina innemen */
+    margin: 0; /* Verwijder marges */
+}
+
+body {
+    background-color: #18181B;
+    color: #fff;
+    display: flex; /* Gebruik flexbox om sidebar en main-content uit te lijnen */
+}
+
+/* Flexbox-container voor de sidebar en main-content */
+.container-fluid {
+    display: flex;
+    min-height: 100vh; /* Zorg ervoor dat de container minstens de volledige hoogte van de viewport heeft */
+}
+
+/* Sidebar-stijlen */
+.sidebar {
+    background-color: #121212;
+    padding: 20px;
+    flex: 0 0 12.5%; /* Sidebar neemt 12.5% van de breedte in */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Sidebar rekt mee met de paginahoogte */
+}
+
+/* Main content */
+.main-content {
+    padding: 20px;
+    flex: 1; /* Main-content neemt de resterende breedte in */
+}
+
+/* Downloadknop */
+.btn-download {
+    background-color: #2a2a2b;
+    color: #00a8e8;
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-download:hover {
+    background-color: #0077cc;
+    color: white;
+}
+
+/* Over-kaart */
+.about-card {
+    background-color: #212121;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #00a8e8;
+}
+
+a:hover {
+    color: #0077cc;
+}
+
+/* Versie-box */
+.version-box {
+    background-color: #2a2a2b;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.version-box h5 {
+    color: #b0b0b0;
+}
+
+/* Pakketbeheer */
+.package-manager {
+    background-color: #2a2a2b;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Navigatielinks */
+.nav-link.active {
+    border-bottom: 2px solid #0d6efd;
+}

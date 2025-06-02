@@ -1,0 +1,18 @@
+{
+  "week1": ["code", "wins", "lessons learned"],
+  "week2": ["code", "wins", "lessons learned"],
+  "week3": ["code", "reflectie", "wins"],
+  "week4": ["code", "lessons learned", "reflectie"],
+  "week5": ["code", "wins", "lessons learned", "reflectie"],
+  "week6": ["code", "devops", "lessons learned", "reflectie"],
+  "week8": ["code", "devops", "lessons learned", "reflectie"],
+  "week9": ["devops", "reflectie", "lessons learned"],
+  "week10": ["devops", "fails", "reflectie", "lessons learned"],
+  "week11": ["code", "wins", "lessons learned", "reflectie"],
+  "week14": ["code", "wins", "ui/ux"],
+  "week15": ["code", "ui/ux", "wins", "lessons learned"],
+  "week16": ["code", "ui/ux", "lessons learned"],
+  "week17": ["code", "ui/ux", "lessons learned", "structure"],
+  "week18": ["code", "ui/ux", "wins", "reflectie", "team"],
+  "week19": ["code", "ui/ux", "reflectie", "afscheid", "lessons learned"]
+}

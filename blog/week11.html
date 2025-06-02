@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blog Stage - CVO Groeipunt</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -18,8 +18,8 @@
                 <h4>Stage CVO Groeipunt</h4>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active text-light" href="/">Home</a>
-                        <a class="nav-link text-light" href="/about">Over</a>
+                        <a class="nav-link text-light" href="/">Home</a>
+                        <a class="nav-link text-light" href="/about.html">Over</a>
                     </li>
                     <li class="nav-item mt-4">
                         <h5>Blogposts</h5>
@@ -56,47 +56,53 @@
             </div>
 
             <div class="main-content" style="width: 87.5%;">
-                <h2>Stage CVO Groeipunt</h2>
+                <h2>Week 11</h2>
                 <div class="package-manager">
-                    <h5>Over stage</h5>
-                    <p>Welkom op mijn stage blog!<br><br>
-                        Momenteel ben ik bezig met een stage bij het Centrum voor Volwassenenonderwijs (CVO) Groeipunt,
-                        waar ik voornamelijk werk met C# en PHP. Tijdens deze stage krijg ik de kans om mijn technische
-                        vaardigheden in de praktijk toe te passen. CVO Groeipunt biedt een leerzame en ondersteunende
-                        setting waar ik niet alleen mijn kennis van softwareontwikkeling uitbreid, maar ook meer leer
-                        over het werken in een team en de verwachtingen van een echte werkplek.<br><br>
+                    <h5>31/03/2025 - 04/04/2025</h5>
+                    <p><strong>Focus op Codekwaliteit en Stabiliteit na PHP-upgrade</strong></p>
 
-                        Deze blog-website is bedoeld om mijn bevindingen, uitdagingen en voortgang tijdens mijn stage te
-                        documenteren. Het biedt een platform waar ik mijn ervaringen en ontwikkelingen kan delen met
-                        mijn lectoren en collega's. Hier vind je updates over mijn dagelijkse bezigheden, de tools en
-                        technieken die ik gebruik, en de projecten waaraan ik werk — alles wat relevant is aan mijn
-                        stage.<br><br>
+                    <p>Na een maand intensief werken aan het containiseren van MijnGroeipunt, verschoof mijn aandacht deze week van
+                        infrastructuur en containerisatie naar het versterken van de applicatie zelf. Deze bewuste keuze
+                        kwam er na overleg met mijn stagementor, die aangaf dat het ook waardevol is om iets
+                        los te laten wanneer de blokkade te groot wordt.</p>
 
-                        Elke week plaats ik een nieuwe blogpost over mijn ervaringen, hoe ik te werk ga, wat ik doe en
-                        de uitdagingen die ik tegenkom.<br><br>
+                    <p><strong>Oplossen van PHP-warnings</strong></p>
 
-                        Veel leesplezier en hopelijk biedt deze blog een interessante blik op mijn stage!</p>
+                    <p>De upgrade naar PHP 8.3 bracht heel wat waarschuwingen aan het licht, voornamelijk door
+                        codepraktijken die sinds PHP 8 strenger zijn geworden. Vooral het gebruik van functies zoals
+                        <code>isset()</code>, <code>is_array()</code> en andere controles zonder voldoende validatie
+                        veroorzaakte meldingen. Deze werden zorgvuldig opgespoord en aangepast in bestanden zoals
+                        <code>constants.php</code>, <code>bancontact.php</code> en <code>lijst.php</code>, zodat de
+                        applicatie nu correct draait onder de nieuwste PHP-versie.</p>
+
+                    <p><strong>Herschrijven van environment.php en Git Cleanup</strong></p>
+
+                    <p>Het configuratiebestand <code>environment.php</code> werd grondig herschreven en vervolgens
+                        uitgesloten van versiebeheer via een aangepaste <code>.gitignore</code>. Ook andere automatisch
+                        gegenereerde of tijdelijke bestanden werden verwijderd uit de repository, wat de codebase
+                        schoner en overzichtelijker maakt.</p>
+
+                    <p><strong>Verbeteringen aan Structuur en Styling</strong></p>
+
+                    <p>Naarmate het project groeit, is duidelijkheid in de code en een goede gebruikerservaring steeds
+                        belangrijker. Daarom verbeterde ik de CSS-structuur (inclusief <code>extraStyle.css</code>) en
+                        introduceerde ik een werkende <strong>dark mode</strong>. Verder bracht ik verschillende kleine
+                        visuele en structurele optimalisaties aan in <code>index.php</code> en andere front-end
+                        componenten.</p>
+
+                    <p><strong>Conclusie</strong></p>
+
+                    <p>Week 11 stond volledig in het teken van kwaliteit en stabiliteit. Door de applicatie foutvrij te
+                        maken voor PHP 8.3, de repository op te schonen en de gebruikerservaring te verbeteren, heb ik
+                        opnieuw een belangrijke stap gezet richting een robuuste, onderhoudsvriendelijke versie van
+                        MijnGroeipunt.</p>
+
+
+
+
+
+
                 </div>
-
-                <!-- Windows Section -->
-                <h5 class="mt-4">Recente blogposts</h5>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="version-box">
-                            <h5>Post 2</h5>
-                            <p>Version: 2.4.3</p>
-                            <a href="#" class="btn-download">Download</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="version-box">
-                            <h5>Post 1</h5>
-                            <p>Version: 2.4.3</p>
-                            <a href="#" class="btn-download">Download</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
